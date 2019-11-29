@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Testando overflows</title>
+
+	<style>
+		.container{
+			display: flex;
+		}
+
+		.container div{
+			border: 1px solid #000;
+			width: 100px;
+			height:  100px;
+			margin: 5px;
+		}
+
+		.box1{
+			overflow: visible;
+		}
+
+		.box2{
+			overflow: hidden;
+		}
+
+		.box3{
+			overflow: auto;
+		}
+
+		.box4{
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam aliquam voluptate quibusdam cumque, architectoLorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam aliquam voluptate quibusdam cumque, architectoLorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam aliquam voluptate quibusdam cumque, architectoLorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam aliquam voluptate quibusdam cumque, architecto fugiat nobis, atque pariatur ullam accusamus laboriosam? Totam quas iusto officia, obcaecati laborum dolorem porro.</div>
+		<div class="box2">a maksjdh aksdjh kasdjh asdk asjdh aksdhkadjh kadh j Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nemo quasi eum doloribus perspiciatis sunt, cum maxime optio facere, fugit deserunt? Facere libero modi, magnam incidunt tempora atque. Laudantium, tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem necessitatibus quidem eum magnam? Dolorem maiores laboriosam voluptatem eveniet, assumenda, quasi suscipit tenetur architecto dicta nam obcaecati, delectus omnis atque velit. inus error rtur eveniet?</div>
+		<div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium eum, similique quod in at aLorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium eum, similique quod in at aLorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium eum, similique quod in at aLorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laudantium eum, similique quod in at a expedita amet placeat reprehenderit deserunt enim. Laudantium voluptatum perspiciatis, sint facere corrupti accusantium cumque!</div>
+		<div class="box4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolorum reiciendis esse ab. Quo suntLorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolorum reiciendis esse ab. Quo suntLorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolorum reiciendis esse ab. Quo suntLorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolorum reiciendis esse ab. Quo sunt nobis reiciendis esse dolore. Repellendus debitis totam delectus natus? Voluptates voluptatum impedit soluta autem incidunt?</div>
+	</div>
+</body>
+</html>

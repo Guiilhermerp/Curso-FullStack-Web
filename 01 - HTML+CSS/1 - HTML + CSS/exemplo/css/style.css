@@ -1,0 +1,49 @@
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 80px;
+    margin-right: 80px; 
+    
+}
+
+#cabecalho {
+    background-color: #ccc;
+    padding: 30px;
+    font-family: 'Hepta Slab', serif;
+}
+
+h1 {
+    text-shadow: 7px 7px 10px rgb(255, 255, 255);
+    color: black;
+    font-size: 64px;
+}
+
+p {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+    font: 12px;
+}
+
+#postagens {
+    padding: 30px;
+    width: 60%;
+}
+
+#rodape {
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px;
+    clear: both;
+}
+
+#boxDireita{
+    margin-right: 20px;
+
+}

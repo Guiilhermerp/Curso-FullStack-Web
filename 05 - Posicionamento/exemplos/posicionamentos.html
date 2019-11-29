@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste de Posicionamento</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .boxP{
+            background-color: #ccc;
+        }
+
+        .boxP>div{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            border: 3px solid #000;
+        }
+
+         .div1{
+            background-color: #F00;            
+
+            position: relative;
+            top: 30px;
+        }
+
+        .div2{
+            background-color: #ff0;
+
+            position: relative;
+            left:30px;
+            bottom: 30px;
+        }
+
+        .div3{
+            background-color: #00f;
+
+            position: relative;
+            bottom: 60px;
+            left: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Inicio div principal -->
+    <div class="boxP">
+        <!-- Inicio Divs internas  -->
+        <div class="div1">Red</div>
+        <div class="div2">Yellow</div>
+        <div class="div3">Blue</div>
+        <!-- Fim das divs internas -->
+    </div>
+    <!-- Fim da div principal -->
+</body>
+</html>

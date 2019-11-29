@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exemplos de Box Sizing</title>
+	<style>
+		/* vamos codar AQUI  */
+		*{
+			box-sizing: border-box
+		}
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		.container div{
+			background-color: aqua;
+			width: 200px;
+			height: 200px;
+			border: 5px solid black;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		.container{
+			background-color: blue;
+			display: flex;
+		}
+
+		.esq{
+			box-sizing: border-box;
+		}
+
+		.dir{
+			box-sizing: content-box;
+		}
+
+
+		/* - - - - - - - - - */
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="esq">
+			box-sizing: border-box;
+		</div>
+		<div class="dir">
+			box-sizing: content-box;
+		</div>
+	</div>
+</body>
+</html>

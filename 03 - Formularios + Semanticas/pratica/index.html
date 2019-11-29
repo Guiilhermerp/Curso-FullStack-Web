@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Inscreva-se</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	
+	<header>
+		Uma frase fantástica
+	</header>
+	<div class="container">
+		<main>
+			<div>
+				<img src="./img/icon1.svg" alt="Avião">
+				<h2>Vantagem 1</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde nesciunt exercitationem sapiente, est beatae </p>
+			</div>
+			<div>
+				<img src="./img/icon2.svg" alt="Bússola">
+				<h2>Vantagem 2</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde nesciunt exercitationem sapiente, est beatae</p>
+			</div>
+			<div>
+				<img src="./img/icon3.svg" alt="Mala">
+				<h2>Vantagem 3</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde nesciunt exercitationem sapiente, est beatae</p>
+			</div>
+			<div>
+				<img src="./img/icon4.svg" alt="Avião">
+				<h2>Vantagem 4</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde nesciunt exercitationem sapiente, est beatae </p>
+			</div>
+		</main>
+
+		<aside>
+			<h2>Inscreva-se!</h2>
+			<form action="" method="POST">
+
+				<div class="form-item">
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome">
+				</div>
+
+				<div class="form-item">
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email">
+				</div>
+
+				<div class="form-item">
+					<label for="espectativa">O que você espera?</label>
+					<textarea name="espectativa" id="espectativa"></textarea>
+				</div>
+
+				<div class="form-item list">
+
+					<span>Quais seus interesses?</span>
+
+					<label>
+						<input type="checkbox" name="int1" id="int1">
+						Interesse 1
+					</label>
+
+					<label>
+						<input type="checkbox" name="int2" id="int2">
+						Interesse 2
+					</label>
+
+
+					<label>
+						<input type="checkbox" name="int3" id="int3">
+						Interesse 3
+					</label>
+
+				</div>
+
+				<div class="form-item">
+
+					<label for="local">Onde será atendido?</label>
+					
+					<select name="local" id="local">
+						<optgroup label="São Paulo">
+							<option value="cps">Campinas</option>
+							<option value="mgc">Mogi das Cruzes</option>
+							<option value="spu">São Paulo</option>
+						</optgroup>
+						<optgroup label="Nordeste">
+							<option value="ssa">Salvador</option>
+							<option value="jpa">João Pessoa</option>
+							<option value="nat">Natal</option>
+						</optgroup>
+					</select>
+
+				</div>
+
+				<div class="form-item list">
+					
+					<span>Quais estado civil?</span>
+					
+					<label>
+						<input type="radio" name="eCivil" id="eCivil-1">
+						Solteiro
+					</label>
+
+					<label>
+						<input type="radio" name="eCivil" id="eCivil-2">
+						Casado
+					</label>
+
+					<label>
+						<input type="radio" name="eCivil" id="eCivil-3">
+						Outros
+					</label>
+
+				</div>
+
+				<div class="controls">
+
+					<button type="reset">Reset</button>
+					<button type="submit">Enviar</button>
+					
+				</div>
+
+			</form>
+		</aside>
+	</div>
+	<footer>
+		&copy; Full Stack 07. Todos os direitos reservados
+	</footer>
+</body>
+</html>
