@@ -1,38 +1,51 @@
 <?php
     class Carro{
-        private $modelo;
+        public $modelo;
         private $ano;
         private $capacidade;
         private $rendimento;
         private $potencia;
         private $velocidade;
+        private $ligado;
 
         // Definindo contrutor da classe
+
         public function __construct($modelo, $ano, $capacidade){
+
             $this->modelo = $modelo;
             $this->ano = $ano;
             $this->capacidade = $capacidade;
             $this->rendimento = 16;
             $this->potencia = 130;
             $this->velocidade = 0;
-        }
-        
-        public function acelerar(){
-            
+            $this->ligado = false;
         }
 
-        public function freiar(){
-            
+        public function ligado(){
+            $this->ligado = true;
+        }
+        
+        public function desligar(){
+            $this->ligado = false;
+        }
+
+        public function acelerar($v){
+            //Equivale a $this->velocidade = $this->velocidade + $v
+            $this->velocidade += $v;
+        }
+
+        public function freiar($v){
+             //Equivale a $this->velocidade = $this->velocidade - $v
+             $this->velocidade -= $v;
         }
 
         public function buzinar(){
-            
+            if ($this->ligado) {
+                echo('BIBIBIBI <br>');
+            } else {
+                echo("ERRO: {$this->modelo} desligado <br>");
+            }
         }
     }
     
-    $c = new Carro('Captur', 2019, 40);
-    echo('<pre>');
-    print_r($c);
-    echo('</pre>');
-    die();
 ?>
