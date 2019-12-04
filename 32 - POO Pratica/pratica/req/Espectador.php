@@ -1,5 +1,5 @@
 <?php
-
+	
 class Espectador {
 
 	protected $id;
@@ -12,7 +12,8 @@ class Espectador {
 	}
 
 	public function logar($email,$senha){
-		
+		$this->logado = true;
+		return true;
 	}
 
 	

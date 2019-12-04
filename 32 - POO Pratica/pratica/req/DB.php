@@ -5,7 +5,7 @@ class DB extends PDO{
 	// Constantes privadas
 	const host = '127.0.0.1';
 	const dbname = 'chat';
-	const port = 3306;
+	const port = 3307;
 	const usuario = 'root';
 	const senha = '';
 

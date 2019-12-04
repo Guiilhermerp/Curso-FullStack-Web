@@ -1,3 +1,19 @@
+<?php
+
+	include('./req/DB.php');
+	include('./req/Espectador.php');
+
+	// Verificando se o form foi submetido
+	if ($_POST) {
+		$u = new Espectador();
+		$u->logar($_POST['email'],$_POST['senha']);
+
+		
+	}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
