@@ -1,3 +1,15 @@
+<?php
+	//iniciando a session
+	session_start();
+
+	if(!$_SESSION['usuario']){
+		// session nao está ok: direcionando para login
+		header('Location: login.php');
+	}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
