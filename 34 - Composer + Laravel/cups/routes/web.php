@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/helloLaravel', function (){
-    return view('hello');
-});
+Route::get('/produtos', 'ProdutoController@viewProdutos');
+
+Route::get('/', 'HomeController@viewIndex');
