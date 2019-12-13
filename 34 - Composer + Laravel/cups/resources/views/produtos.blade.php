@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Certinho</h1>
+    <h1>Produtos</h1>
+    {{dd($produtos)}};
 </body>
 </html>
