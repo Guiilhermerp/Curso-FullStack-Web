@@ -16,7 +16,7 @@ class PetsCreate extends Migration
         Schema::create('pets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name', 255);
-            $table->int('owner_id');
+            
             $table->string('rga', 255);
             $table->date('data_nascimento');
             // $table->dateTime('create_at');

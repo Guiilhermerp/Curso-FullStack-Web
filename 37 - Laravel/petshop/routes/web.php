@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/index', 'PetsController@index');
+
+Route::get('/index2', 'ownersController@index');
