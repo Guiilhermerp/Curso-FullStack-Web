@@ -14,20 +14,32 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h1 class="card-title">Card title</h1>
+            <div id="card" class="card" style="width: 18rem;">
+                <div class="card-body" >
+                    <h2 class="card-title">Card title</h2>
                     <hr>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <div class="offset-4 card-body">
                     <a name="" id="" class="btn btn-danger" href="#" role="button">Excluir</a>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">Pronto</a>
+                    <a name="" id = "btnP" class="btn btn-success" href="#" role="button">Pronto</a>
                 </div>
             </div>
 
-            <div class="direita col-6 bg-danger">
-                Lado direito
+            <div id="card" class="card" style="width: 18rem;">
+                    <div class="card-body" >
+                        <h2 class="card-title">Card title</h2>
+                        <hr>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="offset-4 card-body">
+                        <a name="" id="" class="btn btn-danger" href="#" role="button">Excluir</a>
+                        <a name="" id = "btnP" class="btn btn-success" href="#" role="button">Pronto</a>
+                    </div>
+                </div>
+
+            <div id="direito" class="direita col-6 bg-success">
+                <h1>Tarefas Prontas</h1>
             </div>
         </div>
 
@@ -59,7 +71,7 @@
                     </div>
                     <div class="card-footer text-right">
                         <button class="btn btn-danger">Lixeira</button>
-                        <button class="btn btn-warning">Feito!</button>
+                        <button  class="btn btn-warning">Feito!</button>
                     </div>
                 </div>
             </div>
@@ -74,6 +86,18 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script>
+    
+        let btnPronto = document.getElementById("btnP");
+        let $direito = $('#direito');
+        let $card = $('#card');
+
+        btnPronto.addEventListener('click', function tarefaPronta(evt){
+            $direito.append($card);
+        });
+        
+    </script>
 </body>
 
 
