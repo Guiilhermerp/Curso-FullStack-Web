@@ -13,65 +13,55 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div id="card" class="card" style="width: 18rem;">
-                <div class="card-body" >
-                    <h2 class="card-title">Card title</h2>
-                    <hr>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="offset-4 card-body">
-                    <a name="" id="" class="btn btn-danger" href="#" role="button">Excluir</a>
-                    <a name="" id = "btnP" class="btn btn-success" href="#" role="button">Pronto</a>
+        <div class="row" id="card-container">
+            <div class="col-sm-6">
+                <h1>Tarefas</h1>
+                <div class="col-auto pt-5" id="card">
+                    <div id="card" class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h2 class="card-title">Card title</h2>
+                            <hr>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="offset-4 card-body">
+                            <a name="" id="btnE" class="btn btn-danger" href="#" role="button">Excluir</a>
+                            <a name="" id="btnP" class="btn btn-success" href="#" role="button">Pronto</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="card" class="card" style="width: 18rem;">
-                    <div class="card-body" >
-                        <h2 class="card-title">Card title</h2>
-                        <hr>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="offset-4 card-body">
-                        <a name="" id="" class="btn btn-danger" href="#" role="button">Excluir</a>
-                        <a name="" id = "btnP" class="btn btn-success" href="#" role="button">Pronto</a>
-                    </div>
-                </div>
 
             <div id="direito" class="direita col-6 bg-success">
                 <h1>Tarefas Prontas</h1>
             </div>
         </div>
 
-
     </div>
 
     <footer class="fixed-bottom col-3">
-        <form class="row col bg-dark" action="">
+        <form id="novaTarefa" class="row col bg-dark" action="">
             <label class="ml-2" style="color: #ffffff" for="">Titulo</label>
             <input class="m-2 form-control" type="text" placeholder="Nome da Tarefa">
 
             <label class="ml-2" style="color: #ffffff" for="">Descrição</label>
-            <textarea class="m-2 form-control" placeholder="Descrição da tarefa" name="" id="" cols="1" rows="1"></textarea>
-            <a name="" id="" class="m-2 btn btn-secondary" href="#" role="button">Adicionar Tarefa</a>
+            <input class="m-2 form-control" placeholder="Descrição da tarefa" name="" id="" cols="1" rows="1"></input>
+            <a id="btnNovaTarefa" class="m-2 btn btn-secondary" type="submit" href="#" role="button">Adicionar Tarefa</a>
 
         </form>
     </footer>
 
     <script id="placeholder-card" type="text/html">
-            <div class="col-auto pt-5">
-                <div class="card">
-                    <div class="card-header bg-primary text-white">
-                        <h1>Título exemplo</h1>
-                    </div>
+            <div class="col-auto pt-5" id="card">
+                <div id="card" class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <div class="card-text">
-                            Descrição exemplo da tarefa
-                        </div>
+                        <h2 class="card-title">Card title</h2>
+                        <hr>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                    <div class="card-footer text-right">
-                        <button class="btn btn-danger">Lixeira</button>
-                        <button  class="btn btn-warning">Feito!</button>
+                    <div class="offset-4 card-body">
+                        <a name="" id="btnE" class="btn btn-danger" href="#" role="button">Excluir</a>
+                        <a name="" id="btnP" class="btn btn-success" href="#" role="button">Pronto</a>
                     </div>
                 </div>
             </div>
@@ -88,15 +78,38 @@
         crossorigin="anonymous"></script>
 
     <script>
-    
+
+        // TAREFA PRONTA
         let btnPronto = document.getElementById("btnP");
         let $direito = $('#direito');
         let $card = $('#card');
 
-        btnPronto.addEventListener('click', function tarefaPronta(evt){
+        btnPronto.addEventListener('click', function tarefaPronta(evt) {
             $direito.append($card);
         });
+
+        // EXCLUI TAREFA
+        let btnExclui = document.getElementById("btnE");
+        let element = document.querySelector("#card div");
+
+        btnExclui.addEventListener('click', function excluiTarefa(evt) {
+            element.remove();
+        });
+
+        // CRIA NOVA TAREFA
+        let btnNovaTarefa = document.getElementById("btnNovaTarefa");
+        let items = document.getElementsByTagName("input");
         
+        btnNovaTarefa.addEventListener('click', function pegaInput(){
+            for (i = 0; i < items.length; i++) {
+                items[i].getAttribute("alt") + ": " + items[i].getAttribute("value");
+                return items;
+            }
+            console.log("items");
+        })
+
+        
+
     </script>
 </body>
 
