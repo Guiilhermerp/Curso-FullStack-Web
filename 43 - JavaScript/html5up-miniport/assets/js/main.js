@@ -62,3 +62,23 @@ let navc = document.getElementById("contact");
     navW.textContent = "Trabalho";
     navP.textContent = "Portfolio";
     navc.textContent = "Contato";
+
+
+    // aula dia 10
+    // pegando os valores do input !
+
+    function pegaDados(event){
+
+        event.preventDefault();
+        
+        console.log(
+            document.getElementById('name').value,
+            document.getElementById('email').value,
+            document.getElementById('subject').value,
+            document.getElementById('message').value,
+        );
+
+
+    };
+
+
